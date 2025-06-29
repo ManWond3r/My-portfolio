@@ -1,15 +1,18 @@
 :root {
---bg-color: #f9f9f9;
+--bg-color: #c9b4d5;
 --text-color: #333;
---card-bg: #fff;
+--card-bg: #8e9cc9;
 --header-bg: #1a0725;
 --link-color: #9014d3;
 }
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Amarante", serif;
     background: var(--bg-color);
+    background-image: url('images/bank-note.svg');
+    background-repeat: repeat;
+    background-size: auto;
     color:var(--text-color);
     transition: all 0.4s ease;
 }
@@ -18,6 +21,8 @@ header{
     background: var(--header-bg);
     color: #fff;
     padding: 10px 20px;
+    font-family: "Permanent Marker", cursive;
+    position: relative;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -26,6 +31,7 @@ header{
 }
 
 nav ul{
+    font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -61,13 +67,19 @@ nav a:hover{
 #hero{
     padding: 5rem 3rem;
     text-align: center;
-    background: #5f467976;
+    background: var(--card-bg);
     transition: background-image 0.6s ease-in-out;
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
     color: #050505;
+}
+
+#hero h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Protest Revolution", sans-serif;
 }
 
 #hero:hover{
@@ -140,6 +152,74 @@ section{
     transform: translateY(-6px);
 }
 
+.contact-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dots {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background: var(--link-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.contact-options {
+  display: none;
+  flex-direction: column;
+  background: var(--card-bg);
+  box-shadow: 0 0 10px var(--link-color);
+  border-radius: 8px;
+  padding: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.contact-options a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.3rem 0;
+}
+
+.contact-options a i {
+  margin: 0.5rem;
+  color: var(--link-color);
+}
+
+.contact-options a:hover {
+  color: var(--link-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 footer{
     background: #222;
     color: #fff;
@@ -150,8 +230,8 @@ footer{
 body.dark{
     --bg-color: #1a0725;
     --text-color: #eee;
-    --card-bg: #62416f;
-    --header-bg: #1a0725;
+    --card-bg: #3b3a98;
+    --header-bg: #220931;
     --link-color: #a600ff;
 }
 

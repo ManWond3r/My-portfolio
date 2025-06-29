@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-    <title>Simple HTML Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>MY PORTFOLIO</h1>
         <nav>
             <ul>
                 <li><a href="#hero">Home</a></li>
@@ -21,7 +23,7 @@
                 <li><a href ="#contact">Contact</a></li>
             </ul>
         </nav>  
-        <button id="theme-toggle">🌙</button>
+        <button id="theme-toggle"><img id="theme-icon" src="images/night.png" alt="theme"/></button>
     </header>
  
     <section id="hero">
@@ -44,11 +46,19 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email:<a href="mailto:emanywanda41@gmail.com">emanywanda41@gmail.com</a></p>
-        <p>Github:<a href="https://github.com/ManWonder" target="_blank">@ManWonder </a></p>
-    </section>
+    <div class="contact-menu">
+  <div class="dots" id="contact-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="contact-options" id="contact-options">
+    <a href="https://instagram.com/_link.3dd" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:emanywanda41@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="tel:+254727229656"><i class="fas fa-phone"></i></a>
+  </div>
+</div>
+
 
     <footer>
         <p>©2025 Edward. All rights reserved.</p>
